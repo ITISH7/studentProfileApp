@@ -14,9 +14,10 @@
 </head>
 <body>
     {{>navbar}}
-<div class="student-profile py-4">
     {{#if data}}
     {{#each data}}
+<div class="student-profile py-4">
+    
   <div class="container mt-4">
     <div class="row">
       <div class="col-lg-4">
@@ -85,12 +86,13 @@
         
       </div>
     </div>
-    {{/each}}
-    {{else}}
-    <h1 style="text-align: center;">no data found!</h1>
-    {{/if}}
+    
   </div>
 </div>
+{{/each}}
+{{else}}
+    <h1 style="text-align: center;">no data found!</h1>
+    {{/if}}
 <!-- partial -->
   
 </body>
