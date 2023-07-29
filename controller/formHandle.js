@@ -47,7 +47,7 @@ const getProfile = async(req,res)=>{
     })
 }
 const updateProfile = async(req,res)=>{
-    let{firstName, lastName,age,fatherName,motherName,className,schoolName,mobile,addressName,disability}=req.body;
+    let{Name,age,fatherName,motherName,className,schoolName,mobile,addressName,disability}=req.body;
     if(addressName.trim().length===0){
         addressName= "kakad slum Indore";
     }
